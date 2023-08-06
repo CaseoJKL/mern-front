@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profile from "@/app/_Assets/images/profile.jpg";
+import uidesigner from "@/app/_Assets/images/uidesigner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -56,24 +57,28 @@ const LeftSideBar = () => {
           <h4>News feed</h4>
         </div>
       </section>
-      <hr />
-      <section>
+      <hr className="border-zinc-600" />
+      <section className="main_LeftSideBar-CommunitySection">
+        <header>
+          <h1>My Community</h1>
+          <p>29</p>
+        </header>
         <div>
-          <h1>My Commiunity</h1>
-          <spam>29</spam>
-        </div>
-        <div>
-          {/* <Image src="" alt="" /> */}
-          <div>
-            <h1></h1>
+          <Image
+            className="w-[35px] h-[35px] rounded-full"
+            src={uidesigner}
+            alt=""
+          />
+          <section>
+            <h1>Indonesia UI Designer</h1>
             <div>
               <span>734</span>
               <span>member</span>
             </div>
-          </div>
+          </section>
         </div>
       </section>
-      <hr />
+      <hr className="border-zinc-600" />
       <section>
         <div>
           <h1>Upcomming event</h1>

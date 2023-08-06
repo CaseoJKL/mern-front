@@ -13,6 +13,7 @@
 .main_LeftSideBar {
   @apply max-w-[250px] px-5 bg-zinc-800;
 }
+/* 👇 Menu Section */
 .main_LeftSideBar-MenuSection {
   @apply flex-col-g my-6 text-xs text-gray-300;
 }
@@ -28,6 +29,35 @@
 .active span {
   @apply !bg-zinc-800 !text-gray-300;
 }
+/* 👆 Menu Section */
+
+/* 👇 Cummunity Section */
+.main_LeftSideBar-CommunitySection {
+  @apply flex-col-g  mt-4 text-gray-400 text-sm;
+}
+.main_LeftSideBar-CommunitySection header {
+  @apply flex justify-between items-center text-white;
+}
+.main_LeftSideBar-CommunitySection div {
+  @apply flex justify-start items-center my-4;
+}
+.main_LeftSideBar-CommunitySection div > p {
+  @apply px-2 py-1 bg-zinc-700 rounded-full text-xs;
+}
+.main_LeftSideBar-CommunitySection div > section {
+  @apply text-xs ml-2;
+}
+.main_LeftSideBar-CommunitySection div > section > h1 {
+  @apply text-white;
+}
+.main_LeftSideBar-CommunitySection div > section > div {
+  @apply m-0;
+}
+.main_LeftSideBar-CommunitySection div > section > div > span {
+  @apply text-[10px] mr-1;
+}
+/* 👆 Cummunity Section */
+
 /* 👆 End LeftSideBar in home page */
 @tailwind utilities;
 
