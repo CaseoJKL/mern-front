@@ -1,27 +1,56 @@
 @tailwind base;
 @tailwind components;
+/* 👇 Global class */
+.flex-row-g {
+  @apply flex justify-center items-center;
+}
+.flex-col-g {
+  @apply flex-col justify-center items-center;
+}
+/* 👆 Global classes */
+
+/* 👇 Start LeftSideBar in home page */
+.main_LeftSideBar {
+  @apply max-w-[250px] px-5 bg-zinc-800;
+}
+.main_LeftSideBar-MenuSection {
+  @apply flex-col-g my-6 text-xs text-gray-300;
+}
+.main_LeftSideBar-MenuSection div {
+  @apply flex justify-start items-center pl-2 py-3 rounded-md;
+}
+.main_LeftSideBar-MenuSection div span {
+  @apply text-[10px] rounded-full px-2 py-[0.8px] -tracking-[0.8px] bg-zinc-700 text-center ml-8;
+}
+.active {
+  @apply bg-zinc-700 !text-blue-600;
+}
+.active span {
+  @apply !bg-zinc-800 !text-gray-300;
+}
+/* 👆 End LeftSideBar in home page */
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+}  */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
