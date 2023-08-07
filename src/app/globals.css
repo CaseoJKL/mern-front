@@ -9,9 +9,45 @@
 }
 /* 👆 Global classes */
 
+/* 👇 Start navbar in home page */
+.home_header {
+  @apply text-white bg-zinc-800 border-zinc-600;
+}
+.home_header nav {
+  @apply flex justify-between items-center h-16 px-4;
+}
+.home_header nav > section {
+  @apply flex justify-center items-center;
+}
+.home_header nav > section > div {
+  @apply w-[35px] h-[35px] bg-zinc-700 rounded-full mx-1 flex-row-g cursor-pointer;
+}
+.home_header nav > section > div > svg {
+  @apply m-0;
+}
+.home_header nav > section > h2 {
+  @apply mx-2;
+}
+.home_header nav > ul {
+  @apply flex justify-around items-center bg-zinc-700 rounded text-sm h-[50px] w-[385px];
+}
+.home_header nav > ul > li {
+  @apply flex-row-g  px-4 py-3 rounded cursor-pointer;
+}
+.home_header nav > ul > li > span {
+  @apply bg-zinc-800 rounded-full px-2 py-1 ml-2 text-xs;
+}
+.activate {
+  @apply bg-zinc-800;
+}
+.activate span {
+  @apply !bg-zinc-700;
+}
+/* 👆 End navbar in home page */
+
 /* 👇 Start LeftSideBar in home page */
 .main_LeftSideBar {
-  @apply max-w-[250px] px-5 bg-zinc-800;
+  @apply max-w-[250px] px-5 bg-zinc-800 border-zinc-600;
 }
 /* 👇 Menu Section */
 .main_LeftSideBar-MenuSection {
@@ -90,12 +126,24 @@
   }
 }  */
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+/* Start design Scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* end design Scroll bar */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
 }

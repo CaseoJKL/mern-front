@@ -1,10 +1,13 @@
 import LeftSideBar from "../_Components/Home/LeftSideBar";
+import Navbar from "../_Components/Home/Navbar";
 
 const Home = () => {
   return (
-    <main className="flex justify-between items-center">
+    <main className="flex justify-start items-center">
       <LeftSideBar />
-      <div>Helllo</div>
+      <div className="w-full">
+        <Navbar />
+      </div>
     </main>
   );
 };
