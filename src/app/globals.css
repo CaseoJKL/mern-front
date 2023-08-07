@@ -23,7 +23,7 @@
   @apply w-[20px] h-[20px] sm:w-[35px] sm:h-[35px] bg-zinc-700 rounded-full mx-1 flex-row-g cursor-pointer;
 }
 .home_header nav > section > h2 {
-  @apply hidden sm:block;
+  @apply hidden sm:block sm:text-center;
 }
 .home_header nav > section > div > svg {
   @apply m-0;
@@ -31,17 +31,14 @@
 .home_header nav > section > h1 {
   @apply hidden sm:block sm:text-xl;
 }
-.home_header nav > section > h2 {
-  @apply mx-2;
-}
 .home_header nav > ul {
-  @apply flex justify-around items-center px-1 ml-1 bg-zinc-700 rounded w-[140px] h-[30px] sm:h-[50px] sm:w-[385px];
+  @apply flex justify-around items-center px-1 ml-1 bg-zinc-700 rounded w-[140px] h-[30px] sm:h-[50px] sm:w-[450px];
 }
 .home_header nav > ul > li {
-  @apply flex-row-g px-1 py-1 sm:py-4 text-center sm:px-6 rounded cursor-pointer;
+  @apply flex-row-g px-1 py-1 sm:py-3 text-center sm:px-6 rounded cursor-pointer;
 }
 .home_header nav > ul > li > h4 {
-  @apply text-[5px] sm:text-[10px];
+  @apply text-[5px] sm:text-[12px] md:text-[14px];
 }
 .home_header nav > ul > li > span {
   @apply text-[5px] bg-zinc-800 rounded-full px-2 sm:py-1 ml-2 sm:text-xs;
@@ -117,6 +114,46 @@
   @apply text-[10px] mr-1;
 }
 /* 👆 Cummunity Section */
+
+/* 👇 Start home body Section */
+.home-body {
+  @apply bg-zinc-950 h-[100vh] py-4;
+}
+.post,
+.postcard {
+  @apply max-w-[750px] w-[90%] mx-auto mb-6 flex-col justify-center items-center bg-zinc-900 border-zinc-600 pt-3 md:pt-5 md:pb-2 pb-1 px-4 border-[1px] rounded-lg;
+}
+/* 👇 Post component */
+.post div {
+  @apply flex-row-g mb-1 md:mb-3;
+}
+.post div img,
+.postcard header > li > img {
+  @apply w-[10%] rounded-full md:w-[5%];
+}
+.post div input {
+  @apply text-xs px-3 text-white py-1 placeholder:text-white bg-zinc-700 border-[1px] border-gray-500 rounded-xl  ml-2 w-[90%];
+}
+.post section {
+  @apply flex justify-between items-center md:mx-4;
+}
+.post section div {
+  @apply flex justify-between items-center text-[10px];
+}
+.post section div svg {
+  @apply mr-2 md:text-lg md:mr-4;
+}
+.post section div div {
+  @apply mb-0;
+}
+.post section div button {
+  @apply px-2 py-1 border-[1px] rounded-lg bg-zinc-950 ml-2 md:ml-6 md:px-6 md:py-2;
+}
+/* 👇 Postcard component */
+.postcard header > li {
+  @apply list-none;
+}
+/* 👆 End home body Section */
 
 /* 👆 End LeftSideBar in home page */
 @tailwind utilities;
