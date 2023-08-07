@@ -99,26 +99,60 @@ const LeftSideBar = () => {
         </div>
       </section>
       <hr className="border-zinc-600" />
-      <section>
-        <div>
+      <section className="main_LeftSideBar-CommunitySection">
+        <header>
           <h1>Upcomming event</h1>
-          <spam>12</spam>
-        </div>
+          <p>15</p>
+        </header>
         <div>
-          <div>
-            <span>20</span>
-            <span>des</span>
-          </div>
-          <div>
-            <h1>Product Designer</h1>
-            <div>
-              <span>73k</span>
-              <span>interested</span>
-              <span>-</span>
-              <span>7.7k</span>
-              <span>going</span>
-            </div>
-          </div>
+          <li>
+            <aside>
+              <h4>20</h4>
+              <span>dec</span>
+            </aside>
+            <section>
+              <h1>Product Designer</h1>
+              <div>
+                <span>734</span>
+                <span>interested</span>
+                <span>-</span>
+                <span>7.7k</span>
+                <span>going</span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <aside>
+              <h4>28</h4>
+              <span>jun</span>
+            </aside>
+            <section>
+              <h1>Indonesia UX Research</h1>
+              <div>
+                <span>300</span>
+                <span>interested</span>
+                <span>-</span>
+                <span>1.2k</span>
+                <span>going</span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <aside>
+              <h4>7</h4>
+              <span>nov</span>
+            </aside>
+            <section>
+              <h1>Indonesia Frontend</h1>
+              <div>
+                <span>235</span>
+                <span>interested</span>
+                <span>-</span>
+                <span>4k</span>
+                <span>going</span>
+              </div>
+            </section>
+          </li>
         </div>
       </section>
     </main>

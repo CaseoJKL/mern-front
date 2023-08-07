@@ -18,7 +18,7 @@
   @apply flex-col-g my-6 text-xs text-gray-300;
 }
 .main_LeftSideBar-MenuSection div {
-  @apply flex justify-start items-center pl-2 py-3 rounded-md;
+  @apply flex justify-start items-center pl-2 py-3 my-1 rounded-md cursor-pointer;
 }
 .main_LeftSideBar-MenuSection div span {
   @apply text-[10px] rounded-full px-2 py-[0.8px] -tracking-[0.8px] bg-zinc-700 text-center ml-8;
@@ -45,13 +45,22 @@
   @apply flex-col-g my-4;
 }
 .main_LeftSideBar-CommunitySection div li {
-  @apply flex justify-start items-center list-none my-2;
+  @apply flex justify-start items-center list-none my-3 cursor-pointer;
 }
 .main_LeftSideBar-CommunitySection div li img {
   @apply w-[30px] h-[30px] rounded-full;
 }
 .main_LeftSideBar-CommunitySection div > li > section {
   @apply text-xs ml-2;
+}
+.main_LeftSideBar-CommunitySection div > li > aside {
+  @apply w-[35px] h-[35px] bg-zinc-700 rounded text-center text-xs pt-1;
+}
+.main_LeftSideBar-CommunitySection div > li > aside > h4 {
+  @apply text-white -mb-1;
+}
+.main_LeftSideBar-CommunitySection div > li > aside > span {
+  @apply text-[8px];
 }
 .main_LeftSideBar-CommunitySection div > li > section > h1 {
   @apply text-white;
