@@ -1,6 +1,8 @@
 import Image from "next/image";
 import profile from "@/app/_Assets/images/profile.jpg";
 import uidesigner from "@/app/_Assets/images/uidesigner.jpg";
+import uxresearch from "@/app/_Assets/images/uxresearch.png";
+import frontend from "@/app/_Assets/images/frontend.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -64,18 +66,36 @@ const LeftSideBar = () => {
           <p>29</p>
         </header>
         <div>
-          <Image
-            className="w-[35px] h-[35px] rounded-full"
-            src={uidesigner}
-            alt=""
-          />
-          <section>
-            <h1>Indonesia UI Designer</h1>
-            <div>
-              <span>734</span>
-              <span>member</span>
-            </div>
-          </section>
+          <li>
+            <Image src={uidesigner} alt="" />
+            <section>
+              <h1>Indonesia UI Designer</h1>
+              <div>
+                <span>734</span>
+                <span>member</span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <Image src={uxresearch} alt="" />
+            <section>
+              <h1>Indonesia UX Research</h1>
+              <div>
+                <span>500</span>
+                <span>member</span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <Image src={frontend} alt="" />
+            <section>
+              <h1>Indonesia Frontend</h1>
+              <div>
+                <span>1k</span>
+                <span>member</span>
+              </div>
+            </section>
+          </li>
         </div>
       </section>
       <hr className="border-zinc-600" />
