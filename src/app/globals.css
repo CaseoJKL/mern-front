@@ -29,7 +29,7 @@
   @apply mx-2;
 }
 .home_header nav > ul {
-  @apply flex justify-around items-center bg-zinc-700 rounded text-sm h-[50px] w-[385px];
+  @apply flex justify-around items-center bg-zinc-700 rounded text-sm h-[50px] w-[385px] -ml-[20%];
 }
 .home_header nav > ul > li {
   @apply flex-row-g  px-4 py-3 rounded cursor-pointer;
