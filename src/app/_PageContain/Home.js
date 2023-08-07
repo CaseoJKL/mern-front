@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <main className="flex justify-start items-center">
       <LeftSideBar />
-      <div className="w-full">
+      <div className="w-[100vw]">
         <Navbar />
       </div>
     </main>

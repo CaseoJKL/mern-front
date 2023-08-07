@@ -14,28 +14,37 @@
   @apply text-white bg-zinc-800 border-zinc-600;
 }
 .home_header nav {
-  @apply flex justify-between items-center h-16 px-4;
+  @apply flex justify-between items-center h-20 px-4;
 }
 .home_header nav > section {
   @apply flex justify-center items-center;
 }
 .home_header nav > section > div {
-  @apply w-[35px] h-[35px] bg-zinc-700 rounded-full mx-1 flex-row-g cursor-pointer;
+  @apply w-[20px] h-[20px] sm:w-[35px] sm:h-[35px] bg-zinc-700 rounded-full mx-1 flex-row-g cursor-pointer;
+}
+.home_header nav > section > h2 {
+  @apply hidden sm:block;
 }
 .home_header nav > section > div > svg {
   @apply m-0;
+}
+.home_header nav > section > h1 {
+  @apply hidden sm:block sm:text-xl;
 }
 .home_header nav > section > h2 {
   @apply mx-2;
 }
 .home_header nav > ul {
-  @apply flex justify-around items-center bg-zinc-700 rounded text-sm h-[50px] w-[385px] -ml-[20%];
+  @apply flex justify-around items-center px-1 ml-1 bg-zinc-700 rounded w-[140px] h-[30px] sm:h-[50px] sm:w-[385px];
 }
 .home_header nav > ul > li {
-  @apply flex-row-g  px-4 py-3 rounded cursor-pointer;
+  @apply flex-row-g px-1 py-1 sm:py-4 text-center sm:px-6 rounded cursor-pointer;
+}
+.home_header nav > ul > li > h4 {
+  @apply text-[5px] sm:text-[10px];
 }
 .home_header nav > ul > li > span {
-  @apply bg-zinc-800 rounded-full px-2 py-1 ml-2 text-xs;
+  @apply text-[5px] bg-zinc-800 rounded-full px-2 sm:py-1 ml-2 sm:text-xs;
 }
 .activate {
   @apply bg-zinc-800;
@@ -47,7 +56,7 @@
 
 /* 👇 Start LeftSideBar in home page */
 .main_LeftSideBar {
-  @apply max-w-[250px] px-5 bg-zinc-800 border-zinc-600;
+  @apply w-[280px] px-5 bg-zinc-800 border-zinc-600 hidden md:block;
 }
 /* 👇 Menu Section */
 .main_LeftSideBar-MenuSection {
@@ -57,7 +66,7 @@
   @apply flex justify-start items-center pl-2 py-3 my-1 rounded-md cursor-pointer;
 }
 .main_LeftSideBar-MenuSection div span {
-  @apply text-[10px] rounded-full px-2 py-[0.8px] -tracking-[0.8px] bg-zinc-700 text-center ml-8;
+  @apply text-[10px] rounded-full px-1 py-[0.8px] -tracking-[0.8px] bg-zinc-700 text-center ml-4 hidden lg:block;
 }
 .active {
   @apply bg-zinc-700 !text-blue-600;
@@ -111,20 +120,6 @@
 
 /* 👆 End LeftSideBar in home page */
 @tailwind utilities;
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}  */
 
 /* Start design Scroll bar */
 ::-webkit-scrollbar {

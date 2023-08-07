@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="relative">
             <Image className="rounded-full" src={profile} alt="" />
             <FontAwesomeIcon
-              className="mr-2 absolute top-6 -right-1 text-xs px-[2px] py-[2px] cursor-pointer bg-white text-black rounded-full"
+              className="mr-2 absolute px-[1px] py-[1px] top-3 lg:top-6 -right-1 text-xs lg:px-[2px] lg:py-[2px] cursor-pointer bg-white text-black rounded-full"
               icon={faAngleDown}
             />
           </div>
