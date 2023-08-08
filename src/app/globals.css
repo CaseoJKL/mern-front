@@ -217,7 +217,7 @@
   @apply cursor-pointer;
 }
 .postcard footer {
-  @apply text-blue-700 text-center text-[8px] py-3 cursor-pointer;
+  @apply text-blue-700 text-center text-[8px] py-3 cursor-pointer sm:text-base;
 }
 .postcard main {
   @apply text-[10px];

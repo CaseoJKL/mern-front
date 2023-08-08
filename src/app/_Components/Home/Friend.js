@@ -59,7 +59,9 @@ const Friend = () => {
           </span>
         </li>
       </ul>
-      <footer className="my-3 py-2 text-blue-600 text-center">See all</footer>
+      <footer className="my-3 py-2 text-blue-600 text-center cursor-pointer">
+        See all
+      </footer>
     </section>
   );
 };
