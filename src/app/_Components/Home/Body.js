@@ -103,7 +103,7 @@ const Body = () => {
                   <p>Reply comment</p>
                   <span>12</span>
                 </div>
-                <div>
+                <main>
                   <hgroup>
                     <FontAwesomeIcon icon={faArrowUp} />
                     <span>Upvote</span>
@@ -113,7 +113,7 @@ const Body = () => {
                     <span>Downvote</span>
                     <FontAwesomeIcon icon={faArrowDown} />
                   </hgroup>
-                </div>
+                </main>
               </section>
             </hgroup>
           </article>

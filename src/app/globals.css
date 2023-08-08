@@ -239,15 +239,18 @@
   @apply flex items-center justify-between;
 }
 .postcard main article > hgroup > section > div {
-  @apply flex justify-between items-center !static cursor-pointer text-[8px];
+  @apply flex justify-start items-center !static cursor-pointer text-[8px] sm:text-xs;
+}
+.postcard main article > hgroup > section > main {
+  @apply flex-row-g;
 }
 .postcard main article > hgroup > section > div > span {
-  @apply px-[2px] bg-zinc-600 rounded-full;
+  @apply px-[2px] bg-zinc-600 rounded-full ml-1;
 }
-.postcard main article > hgroup > section > div > hgroup {
-  @apply w-full cursor-pointer;
+.postcard main article > hgroup > section > main > hgroup {
+  @apply flex-row-g cursor-pointer;
 }
-.postcard main article > hgroup > section > div > hgroup > svg {
+.postcard main article > hgroup > section > main > hgroup > svg {
   @apply mx-1;
 }
 /* 👆 End home body Section */
