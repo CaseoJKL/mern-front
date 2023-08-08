@@ -23,7 +23,7 @@ import {
 
 const Body = () => {
   return (
-    <main className="home-body text-gray-300">
+    <main className="home-body ">
       <Post />
       <div className="postcard">
         <header>
