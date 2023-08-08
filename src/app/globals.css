@@ -116,10 +116,11 @@
 
 /* 👇 Start home body Section */
 .home-body {
-  @apply bg-zinc-950 max-h-[100%] py-32 text-gray-300 w-full ml-0 md:w-[calc(100%-280px)] md:ml-[280px];
+  @apply bg-zinc-950 max-h-[100%] py-32 text-gray-300 w-full ml-0 md:w-[calc(100%-280px)] md:ml-[280px] flex-row-g;
 }
 .post,
-.postcard {
+.postcard,
+.adCard {
   @apply max-w-[750px] w-[90%] mx-auto mb-6 flex-col justify-center items-center bg-zinc-900 border-zinc-600 pt-3 md:pt-5 md:pb-2 pb-1 px-4 border-[1px] rounded-lg;
 }
 /* 👇 Post component */
