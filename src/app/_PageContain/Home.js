@@ -4,7 +4,7 @@ import Navbar from "../_Components/Home/Navbar";
 
 const Home = () => {
   return (
-    <main className="flex justify-start items-center">
+    <main className="flex justify-start items-start">
       <LeftSideBar />
       <div className="w-[100vw]">
         <Navbar />
