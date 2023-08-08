@@ -2,12 +2,11 @@ import Image from "next/image";
 import profile from "@/app/_Assets/images/profile.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHome,
   faCamera,
   faImage,
   faPaperclip,
-  faMapMarker,
   faFaceSmile,
+  faMapMarker,
   faPencil,
 } from "@fortawesome/free-solid-svg-icons";
 const Post = () => {

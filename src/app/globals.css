@@ -11,7 +11,7 @@
 
 /* 👇 Start navbar in home page */
 .home_header {
-  @apply text-white bg-zinc-800 border-zinc-600;
+  @apply text-white bg-zinc-800 border-b-[1px] border-zinc-600;
 }
 .home_header nav {
   @apply flex justify-between items-center h-20 px-4;
@@ -53,7 +53,7 @@
 
 /* 👇 Start LeftSideBar in home page */
 .main_LeftSideBar {
-  @apply w-[280px] px-5 bg-zinc-800 border-zinc-600 hidden md:block;
+  @apply w-[280px] px-5 bg-zinc-800 border-zinc-600 hidden md:block border-r-[1px];
 }
 /* 👇 Menu Section */
 .main_LeftSideBar-MenuSection {
@@ -71,7 +71,6 @@
 .active span {
   @apply !bg-zinc-800 !text-gray-300;
 }
-/* 👆 Menu Section */
 
 /* 👇 Cummunity Section */
 .main_LeftSideBar-CommunitySection {
@@ -113,25 +112,29 @@
 .main_LeftSideBar-CommunitySection div > li > section > div > span {
   @apply text-[10px] mr-1;
 }
-/* 👆 Cummunity Section */
+/* 👆 End LeftSideBar in home page */
 
 /* 👇 Start home body Section */
 .home-body {
-  @apply bg-zinc-950 h-[calc(100vh-80px)] py-4;
+  @apply bg-zinc-950 h-[100vh] py-4;
 }
 .post,
 .postcard {
   @apply max-w-[750px] w-[90%] mx-auto mb-6 flex-col justify-center items-center bg-zinc-900 border-zinc-600 pt-3 md:pt-5 md:pb-2 pb-1 px-4 border-[1px] rounded-lg;
 }
 /* 👇 Post component */
-.post div {
+.post div,
+.postcard section {
   @apply flex-row-g mb-1 md:mb-3;
 }
 .post div img,
-.postcard header > li > img {
-  @apply w-[10%] rounded-full md:w-[5%];
+.postcard header > li > img,
+.postcard section img,
+.postcard main article img {
+  @apply w-[8%] rounded-full sm:w-[5%];
 }
-.post div input {
+.post div input,
+.postcard section input {
   @apply text-xs px-3 text-white py-1 placeholder:text-white bg-zinc-700 border-[1px] border-gray-500 rounded-xl  ml-2 w-[90%];
 }
 .post section {
@@ -150,8 +153,102 @@
   @apply px-2 py-1 border-[1px] rounded-lg bg-zinc-950 ml-2 md:ml-6 md:px-6 md:py-2;
 }
 /* 👇 Postcard component */
+.postcard header {
+  @apply flex justify-between items-center;
+}
 .postcard header > li {
-  @apply list-none;
+  @apply list-none flex justify-start items-center;
+}
+.postcard header > li > svg {
+  @apply mx-2 md:mx-3;
+}
+.postcard header > li > article {
+  @apply flex-col-g ml-2;
+}
+.postcard header > li > article > h5 {
+  @apply text-white mb-1 text-[10px] md:text-base;
+}
+.postcard header > li > article > span {
+  @apply text-[6px] md:text-xs flex-row-g gap-x-[4px];
+}
+.postcard p {
+  @apply text-[9px] my-1 md:text-sm;
+}
+.postcard div {
+  @apply relative pt-[100%] rounded-lg overflow-hidden;
+}
+.postcard div img {
+  @apply h-full w-full absolute top-0 bg-cover;
+}
+.postcard ul {
+  @apply flex justify-between items-center text-xs my-3;
+}
+.postcard ul > li {
+  @apply flex justify-between items-center text-[8px] sm:text-xs;
+}
+.postcard ul > li > h6 {
+  @apply mx-[3px];
+}
+.postcard ul > li > span {
+  @apply px-1 rounded-full bg-zinc-700 text-[6px] sm:text-[10px];
+}
+.clicked {
+  @apply text-blue-700;
+}
+.clicked span {
+  @apply !text-white !bg-blue-700;
+}
+.postcard section {
+  @apply text-white my-2 w-full;
+}
+.postcard section > div {
+  @apply relative p-0 w-full;
+}
+.postcard section > div > input {
+  @apply w-[95%];
+}
+.postcard section > div > div {
+  @apply absolute top-[8px] p-0 sm:right-8 right-4 text-[12px] flex-row-g gap-x-[4px];
+}
+.postcard section > div > div > svg {
+  @apply cursor-pointer;
+}
+.postcard footer {
+  @apply text-blue-700 text-center text-[8px] py-3 cursor-pointer;
+}
+.postcard main {
+  @apply text-[10px];
+}
+.postcard main > hgroup,
+.postcard main > hgroup > div {
+  @apply flex justify-between items-center pt-0 my-2;
+}
+.postcard main hgroup > div > svg {
+  @apply pt-1;
+}
+.postcard main hgroup > div > p {
+  @apply mx-1 my-0 text-white;
+}
+.postcard main article {
+  @apply flex justify-start items-start;
+}
+.postcard main article > hgroup {
+  @apply flex-col items-center justify-center mt-0 ml-2  w-full;
+}
+.postcard main article > hgroup > section {
+  @apply flex items-center justify-between;
+}
+.postcard main article > hgroup > section > div {
+  @apply flex justify-between items-center !static cursor-pointer text-[8px];
+}
+.postcard main article > hgroup > section > div > span {
+  @apply px-[2px] bg-zinc-600 rounded-full;
+}
+.postcard main article > hgroup > section > div > hgroup {
+  @apply w-full cursor-pointer;
+}
+.postcard main article > hgroup > section > div > hgroup > svg {
+  @apply mx-1;
 }
 /* 👆 End home body Section */
 
