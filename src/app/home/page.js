@@ -1,4 +1,4 @@
-import Home from "../_PageContain/Home";
+import Home from "../_PageContain/Home/Home";
 
 const HomePage = () => {
   return <Home />;
