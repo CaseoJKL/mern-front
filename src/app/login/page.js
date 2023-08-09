@@ -1,4 +1,4 @@
-import Login from "../_PageContain/Login/Login";
+import Login from "@/app/_PageContain/Login/Login";
 
 const LoginPage = () => {
   return <Login />;
