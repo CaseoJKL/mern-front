@@ -10,7 +10,7 @@
 /* 👆 Global classes */
 
 /* 👇 Start navbar in home page */
-.home_header {
+/* .home_header {
   @apply z-20 text-white bg-zinc-800 border-b-[1px] border-zinc-600 fixed top-0 left-0 md:left-[280px] w-full md:w-[calc(100%-280px)];
 }
 .home_header nav {
@@ -42,7 +42,7 @@
 }
 .home_header nav > ul > li > span {
   @apply text-[5px] bg-zinc-800 rounded-full px-2 sm:py-1 ml-2 sm:text-xs;
-}
+} */
 .activate {
   @apply bg-zinc-800;
 }
@@ -53,7 +53,7 @@
 
 /* 👇 Start LeftSideBar in home page */
 .main_LeftSideBar {
-  @apply z-20 w-[280px] px-5 pb-[40%] bg-zinc-800 border-zinc-600 hidden md:block  border-r-[1px] fixed overflow-auto max-h-[100vh];
+  @apply z-20 w-[280px] px-5 pb-[40%] bg-zinc-800 border-zinc-600 hidden lg:block  border-r-[1px] fixed overflow-auto max-h-[100vh];
 }
 /* 👇 Menu Section */
 .main_LeftSideBar-MenuSection {
@@ -116,7 +116,7 @@
 
 /* 👇 Start home body Section */
 .home-body {
-  @apply bg-zinc-950 max-h-[100%] py-32 text-gray-300 w-full ml-0 md:w-[calc(100%-280px)] md:ml-[280px] flex justify-center items-start;
+  @apply bg-zinc-950 max-h-[100%] py-32 text-gray-300 w-full ml-0 lg:w-[calc(100%-280px)] lg:ml-[280px] flex justify-center items-start;
 }
 .post,
 .postcard,
