@@ -15,7 +15,7 @@ import {
 const LeftSideBar = () => {
   return (
     <main className="main_LeftSideBar">
-      <section className="flex justify-start items-center pt-10 pb-5 font-bold text-blue-600">
+      <section className="flex items-center justify-start pt-10 pb-5 font-bold text-blue-600">
         <Image
           className="w-[20%] rounded-full mr-2"
           src={profile}
@@ -24,7 +24,7 @@ const LeftSideBar = () => {
         <h1>Kaloka</h1>
       </section>
       <section>
-        <div className="w-full relative">
+        <div className="relative w-full">
           <FontAwesomeIcon
             className="absolute top-[13px] left-2"
             icon={faSearch}
